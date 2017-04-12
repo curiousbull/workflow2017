@@ -1,0 +1,449 @@
+#+TITLE: 模型评估与选择
+
+* 经验误差与过拟合
+
+  1. 概念
+     - 错误率：分类错误样本数占样本总数的比率
+     - 精度：1-错误率
+     - 误差：学习器的实际预测输出与样本的真实输出差异称为“误差”
+     - 泛化误差：学习器在训练集上的误差称为“训练误差”或“经验误差”，在新样本上的误差称为“泛化误差”
+     
+  2. 过拟合与欠拟合
+     - 过拟合：最常见的情况是由于学习能力过于强大，以至于把训练样本所包含的不太一般的特性都学到了
+     - 欠拟合：通常由于学习能力低下造成
+
+* 评估方法
+  
+** 留出法 
+   
+   #+BEGIN_QUOTE
+   直接将数据集 D 划分为两个互斥的集合，其中一个集合作为训练集 S, 另一个作为测试集 T，在 S 上训练
+   出模型后，用 T 来估计其测试误差，作为对泛化误差的估计。
+   #+END_QUOTE
+   
+   - 注意点：
+     1. 训练/测试集划分要尽可能保持数据分布一致性。
+     2. 即便给定训练集/测试集样本比例后，仍存在多种方式对初始数据集进行划分，不同
+        划分方式得到的泛化误差也会有差异。
+     3. 单次使用留出法将导致评估结果不够稳定可靠，在使用留出法时，一般要进行若干次随机划分，重复进行
+        实验评估后取平均值作为留出法的评估结果。
+     4. 留出法的训练集如果比较大，会比较接近用 D 训练出的模型，但是由于 T 比较小，评估结果可能不够准确
+        稳定，如果测试集 T 比较大的话，训练集 S 与 D 的差别会更大，这个缺陷没有完美解决方案，常见做法
+        是将大约 $2/3\approx 4/5$ 的样本用于训练，剩余样本用于测试。
+
+** 交叉验证法 (k 折交叉验证)
+
+   #+BEGIN_QUOTE
+   先将数据集 D 划分为 k 个大小相似的互斥子集，即 $D=D_1\cup D_2 \cup \ldots\cup D_k, D_i\cap D_j = 
+   \emptyset(i\neq j)$. 每个子集 $D_i$ 都尽可能保持数据分布一致性，即从 D 中通过分层采样得到。然后，每次用
+   $k-1$ 个子集的并集作为训练集，余下的那个子集作为测试集；这样，得到 k 组训练/测试集，从而可进行 k 次训练
+   与测试，最终返回的是这 k 个测试结果的均值。
+   #+END_QUOTE
+
+   - 注意点：
+     1. 与留出法类似，将数据集 D 划分为 k 个子集同样存在多种方式 ，为减小样本划分不同引入的差别，k 折验证法
+        通常要随机使用不同的划分方式 p 次，最终这 p 次 k 折验证法结果的均值为最终的评估结果。
+     2. 留一法：假定数据集 D 中包含 m 个样本，若令 k=m，则得到了交叉验证法的特例，留一法。
+        - 留一法不收随机样本划分方式影响
+        - 使用的训练集与初始数据集相比仅差了一个样本，使得训练结果与实际评估的模型很相似
+        - 数据集比较大的情况下，计算量会很大
+
+** 自助法
+
+   #+BEGIN_QUOTE
+   自助法直接以自助采样法为基础，给定 m 个样本的数据集 D，我们对其进行采样产生数据集 $D^{\prime}$ ： 每次随机从
+   D 中挑选一个样本，将其拷贝放入 $D^{\prime}$, 然后再将该样本放回初始数据集 D 中，使得该样本在下次采样中仍有可
+   能被采到；这个过程重复 m 次后，我们得到包含 m 个样本的数据集 $D^{\prime}$, 这就是自助采样的结果。
+   #+END_QUOTE
+
+   - 说明： 
+     1. 我们希望评估的是用 D 训练出的模型，但在留出法和交叉验证法中，由于保留了一部分样本用于测试，因此实际
+        评估的模型所使用的数据集比 D 小，这必然会引入因训练样本规模不同而导致的估计偏差，而留一法则在样本规模比较大
+        的情况下，计算量太大。自助法在数据量比较小，难以有效划分训练/测试集时很有用。
+ 
+     2. 显然，D 中有一部分数据会在 $D^{\prime}$ 中多次出现，另一部分数据则不会出现，因此，可以做一个简单估计，样本在 m
+        次采样中始终不被采集到的概率是 $(1-\frac{1}{m})^m$, 取极限有：
+
+          \begin{equation}
+            \lim\limits_{m\mapsto \infty}\left( 1-\frac{1}{m} \right)^m\mapsto \frac{1}{e} \approx 0.368
+          \end{equation}
+
+        即通过自助采样，初始数据集 D 中约有 $36.8\%$ 的样本未出现在采样数据集 $D^{\prime}$ 中，于是我们可以将 $D^{\prime}$
+        作为训练集，将 $D\\D^{\prime}$ 作为测试集，这样，实际评估的模型与期望评估的模型都使用了 m 个训练样本，而我们
+        仍有数据总量的 1/3 的、没在训练集中出现的样本用于测试，这样的测试结果，亦称 “包外估计” (=out-of-bag estimate=)
+
+     3. 自助法能从初始数据集中产生多个不同的训练集，这对集成学习等方法有很大好处。
+
+     4. *然而，自助法产生的数据集改变了初始数据集的分布，这会引入估计偏差。* 因此，在初始数据量足够的情况下，留出法和交叉验证法
+        更常用。
+
+** 调参与最终模型
+     
+   #+BEGIN_QUOTE
+   给定包含 m 个样本的数据集 D，在模型评估与选择过程中，由于需要留出一部分数据进行评估测试，事实上我们仅使用了一部分数据训练模型。
+   因此，在模型选择完成后，学习算法和参数配置已经选定，此时应该用数据集 D 重新训练模型，这个模型在训练过程中使用了所有的 m 个样本，
+   这才是我们最终提交给用户的模型。
+   #+END_QUOTE
+      
+* 性能度量
+
+  在预测任务中，给定样例集 $D=\{(\bm{x}_1,y_1),(\bm{x}_2,y_1),\ldots,(\bm{x}_m,y_m)\}$, 其中 $y_i$ 是标记示例 $\bm{x}_i$
+  的真实标记。要评估学习器 $f$ 的性能，就要把学习器预测结果 $f(\bm{x})$ 与真实标记 $y$ 进行比较。
+
+  回归任务最常用的性能度量是 “均方误差”(=mean square error=)：
+
+    \begin{equation}
+      E(f;D) = \frac{1}{m}\sum\limits^{m}_{i=1}(f(\bm{x}_i)-y_i)^2
+    \end{equation}
+
+  更一般的，对于数据分布 $\mathcal{D}$ 和概率密度函数 $p(\cdot)$, 均方误差可描述为：
+
+    \begin{equation}
+      E(f;\mathcal{D}) = \int_{x\sim \mathcal{D}}(f(\bm{x}-y))^2p(\bm{x}){\rm d}\bm{x}
+    \end{equation}
+
+** 错误率与精度
+
+   对样例集 D, 分类错误率定义为：
+
+     \begin{equation}
+       E(f;D) = \frac{1}{m}\sum\limits^{m}_{i=1}I(f(\bm{x}_i)\neq{}y_i)
+     \end{equation}
+
+   精度定义为：
+
+     \begin{equation}
+       \begin{array}{lcl}
+         acc(f;D) &=& \frac{1}{m}\sum\limits^{m}_{i=1}I(f(\bm{x}_i)={}y_i)\\
+         &=&1-E(f;D)
+         \end{array}
+     \end{equation}
+
+** 查准率、查全率和 F1
+   
+   - 混淆矩阵： 对于二分类问题，可将样例根据其真实类别与学习器预测类别的组合划分为真正例 (TP), 真反例 (TN), 真反例 (TN), 
+     假反例 (FN)，分类结果可以列出 “混淆矩阵”
+
+     #+NAME: tab1.1 分类结果混淆矩阵
+     +----------+---------------------+
+     |真实情况  |预测结果             |
+     |          +----------+----------+
+     |          |正例      |反例      |
+     +----------+----------+----------+
+     |正例      |TP        |FN        |
+     +----------+----------+----------+
+     |反例      |FP        |TN        |
+     +----------+----------+----------+
+
+   - 查准率：学习器学习出来的正例中正确的正例所占的比例
+
+       \begin{equation}
+         P = \frac{TP}{TP+FP}
+       \end{equation}
+
+   - 查全率：学习器学习出来的正例占整个测试样本的比例
+
+       \begin{equation}
+         R = \frac{TP}{TP+FN}
+       \end{equation}
+
+   - P-R 曲线：横坐标为查全率(Recall)，纵坐标查准率(Precision)
+
+     在很多情形下，我们可根据学习器预测结果对样例进行排序，排在前面的是学习器认为 “最可能” 是正例的样本，排在最后的则是学习器认为
+     “最不可能” 是正例的样本，按此顺序逐个将样本作为正例进行预测，则每次都可以得到一组查全率，查准率。以查全率为横轴，查准率为纵轴，
+     可以画出 “P-R 曲线”，显示该曲线的图称为 “P-R 图”。
+
+   - 平衡点 (BEP) 
+     如果一个学习器 A 的 “P-R” 曲线将另外一个学习器 B 的 “P-R 曲线” 完全包住，可认为学习器 A 的性能比较好，如果 A 不能完成包住 B，
+     两个学习器有交叉，可以度量两个学习器在 “P-R 图” 上围住的面积，但是计算并不方便，此时，可以取两个学习器的 “平衡点” (BEP)，即查准率与
+     查全率相等的点，看哪个值更大。
+     
+   - F1: 基于查准率与查全率的调和平均
+
+     BEP 还是过于简单，更常用的是 F1，基于查准率与查全率的调和平均
+
+       \begin{equation}
+         \begin{array}{lcl}
+           F1 &=& \frac{1}{2}\frac{1}{1/P+1/R}\\
+              &=& \frac{2PR}{P+R}
+         \end{array}
+       \end{equation}
+    
+   - $F_\beta$: 基于查准率与查全率的调和平均
+
+     F1 隐含了查准率与查全率重要性是一样的，为了表达出对查准率、查全率不同程度的偏好，可以引入加权后的调和平均
+       \begin{equation}
+         \begin{array}{lcl}
+           F_{\beta} &=& \frac{1}{1+\beta^2}\frac{1}{1/P+\beta^2/R}\\
+                     &=&\frac{(1+\beta^2)\times{}P\times{}R}{(\beta^2\times{}P)+R}
+         \end{array}
+       \end{equation}
+       
+   - 宏-查准率，宏-查全率，微-查准率，微-查全率
+
+     很多时候，我们有很多混淆矩阵，我们希望在 n 个二分类混淆矩阵上综合考察查准率和查全率
+
+     - 宏-查准率(macro-P)，宏-查全率(macro-R)
+
+         \begin{eqnarray}
+           macro-P &=& \frac{1}{n}\sum\limits_{i=1}^nP_i,\\
+           macro-R &=& \frac{1}{n}\sum\limits_{i=1}^nR-i,\\
+           macro-F1 &=& \frac{2\times{}macro-P\times{}macro-R}{macro-P+macro-R}.
+         \end{eqnarray}
+
+     - 微查准率(micro-P)，微-查全率(micro-R)
+       
+       可以将所有混淆矩阵对应元素进行平均，得到 TP, NP, TN, FN 的平均值，记为 $\bar{TP},\bar{FP},\bar{TN},\bar{FN}$,
+       然后可以计算微-查准率和微-查全率。
+
+         \begin{eqnarray}
+           micro-P &=& \frac{\bar{TP}}{\bar{TP}+\bar{FP}},\\
+           micro-R &=& \frac{\bar{TP}}{\bar{TP}+\bar{FN}},\\
+           micro-F1 &=& \frac{2\times{}micro-P\times{}micro-R}{micro-P+micro-R}.
+         \end{eqnarray}
+         
+     - PR Curve 示例
+
+       [[file:MachineLearning/ml_basic/PRCurve.png]]
+
+** =ROC= 与 =AUC=
+         
+   - ROC 曲线
+
+     #+BEGIN_QUOTE
+     我们根据学习器的预测结果对样例进行排序，按此顺序逐个将样本作为正例进行预测，每次计算出两个重要量的值，分别以它们为横轴、纵轴作图，就
+     得到了 “ROC 曲线”，其中，横坐标为 “真正例率”，纵坐标为 “假正例率”，定义如下：
+
+     #+BEGIN_SRC latex :exports results
+       \begin{equation}
+         \begin{array}{lcl}
+           TPR &=& \frac{TP}{TP+FN},\\
+           FPR &=& \frac{FP}{TN+FP}.
+         \end{array}
+         \end{equation}
+     #+END_SRC
+
+     显示 “ROC 曲线” 的图叫做 “ROC 图”， “ROC 曲线” 下的面积称为 “AUC(Area Under ROC Curve)”。
+     #+END_QUOTE
+
+   - 不同 ROC 曲线的比较：与 P-R 曲线类似，若一个学习器的 ROC 被另一个学习器曲线完成包住，则可以断言，后者性能会更好，如果两者有交叉，则
+     可以比较 AUC.
+
+   - *AUC 面积计算* (难点)
+
+     可以通过对 ROC 曲线下各部分的面积求和而得。假定 ROC 曲线是由坐标 $\{(x_1,y_1),(x_2,y_2),\ldots,(x_m,y_m)\}$ 的点按序连接而成
+     ($x_1=0,x_m=1$). 则 AUC 估算为：
+
+       \begin{equation}
+         AUC = \frac{1}{2}\sum\limits^{m-1}_{i=1}(x_{i+1}-x_i)\cdot(y_i+y_{i+1}).
+       \end{equation}
+
+   - *排序损失函数 (loss function)* (更难理解)
+
+       \begin{equation}
+         \mathscr{l}_{rank} = \frac{1}{m^+m^-}\sum\limits_{x^+\in{}D^+}\sum\limits_{x^-\in{}D^-}\left(
+         I(f(x^+) < f(x^-)) + \frac{1}{2}I(f(x^+) = f(x^-)) \right)
+       \end{equation}
+
+   - 曲线示例
+
+     [[file:MachineLearning/ml_basic/ROC_AUC.png]]
+
+* 比较检验
+
+  对学习器的性能进行评估比较涉及几方面因素：
+
+  1. 希望比较的是泛化性能，然而通过实验评估方法，我们获得的是测试集上的性能
+  2. 测试集上的性能与测试集本身的选择关系很大
+  3. 很多机器学习算法本身有一定随机性，即便使用相同参数设置在同一个测试集上多次运行，结果也会不同
+  4. *实际我们做的是用测试集的误差去估计泛化误差，这样做是否合适的依据，是统计假设检验*
+
+** 假设检验
+
+   #+BEGIN_VERSE
+   假设检验中的 “假设” 是对学习器泛化错误率分布的某种判断或猜想，现实任务中我们并不知道学习器的泛化错误率，只能获知其测试
+   错误率 $\hat{\epsilon}$, 泛化错误率未必与测试错误率相同，但直观上，我们可以认为两者接近的可能性比较大，可根据测试错
+   误率来推断出泛化错误率 $\epsilon$ 的分布。 
+   #+END_VERSE
+   
+   下面的 1-3 讨论的是单个学习器假设检验，4-5 为两个学习的假设检验，剩余的为多个学习器的假设检验。
+
+   1. “二项检验” 的引入
+
+      泛化错误率为 $\epsilon$ 的学习器在一个样本上犯错的概率是 $\epsilon$; 测试错误率 $\hat{\epsilon}$ 意味着在
+      m 个测试样本中恰有 $\hat{\epsilon}\times m$ 个样本被误分类。假定 *测试样本是从样本总体分布中独立采样* 得到，
+      那么，泛化错误率为 $\epsilon$ 的学习器将其中 $m^{\prime}$ 误分类的概率为：
+
+      \begin{equation}
+        \mathcal{C}^{m^\prime}_m\epsilon^m^\prime(1-\epsilon)^{m-m^\prime},
+      \end{equation}
+
+      由此估算其恰将 $\hat{\epsilon}\times{}m$ 个样本误分类的概率则为：
+
+      \begin{equation}
+        P(\hat{\epsilon};\epsilon) = \mathcal{C}^{\hat{\epsilon}\times{}m}_m\epsilon^{\hat{\epsilon}\times{}m}
+        (1-\epsilon)^{m-\hat{\epsilon}\times{}m},
+      \end{equation}
+
+      对上式求极值，在 $\partial P(\hat{\epsilon};\epsilon)/\partial \epsilon = 0$ 可知，
+      $P(\hat{\epsilon};\epsilon)$ 在 $\epsilon = \hat{\epsilon}$ 时最大； $|\epsilon-\hat{\epsilon}|$ 
+      增大时， $P(\hat{\epsilon};\epsilon)$ 减小，这符合二项 (binomial) 分布，这里，我们可以引入二项检验的假设。
+      即认为我们用测试集测得的 $\hat{\epsilon}$ 符合二项分布。
+    
+   2. “二项检验”
+
+      一般的，考虑假设 "$\epsilon\leq \epsilon_0$", 则在 $1-\alpha$ 的概率内所能观察到的最大错误率如下式计算，这里，
+      $1-\alpha$ 反映了结论的 “置信度” (confidence).
+
+        \begin{equation}
+          \begin{array}{lcl}
+            \hat{\epsilon}=max\epsilon&s.t.&\sum\limits^m_{i=\epsilon_0\times{}m+1}C^i_m
+                                             \epsilon^i(1-\epsilon)^{m-i}<\alpha
+            \end{array}
+        \end{equation}
+
+      此时，如果测试错误率 $\hat{\epsilon}$ 小于临界值 $\hat{\epsilon}$, 即能以 $1-\alpha$ 的置信度认为，学习器的泛化
+      错误率不大于 $\epsilon_0$; 否则该假设可以被拒绝。
+
+   3. t 检验 (t-test)
+
+      *当二项分布的 $m\sim\infty$, 二项分布应该接近高斯分布，而如果 m 比较大的情形下，是否就应该趋近于 t 分布*[fn:1] ，因此， 当我们
+      进行多次重复留出法或交叉验证法进行多次训练/测试，此时得到的多个测试错误率，可以使用 “t 检验” (t-test). 假定我们得到了 k
+      个错误率， $\hat{\epsilon}_1,\hat{\epsilon}_2,\ldots,\hat{\epsilon}_k$, 平均测试错误率 $\mu$ 和方差 $\sigma^2$
+      为：
+      
+        \begin{eqnarray}
+          \mu &=& \frac{1}{k}\sum\limits^k_{i=1}\hat{\epsilon}_i\\
+          \sigma^2 &=& \frac{1}{k}\sum\limits^k_{i=1}(\hat{\epsilon}_i-\mu)^2.
+        \end{eqnarray}
+
+      考虑这 k 个测试错误率可以看做是泛化错误率 $\epsilon_0$ 的独立采样，则变量
+
+        \begin{equation}
+          \tau_t=\frac{\sqrt{k}(\mu-\epsilon_0)}{\sigma}
+        \end{equation}
+
+      服从自由度为 t-1 的 t 分布。
+
+      对于假设 "$\mu=\epsilon_0$" 和显著度 $\alpha$, 我们可以计算出当测试错误率均值为 $\epsilon_0$ 时，在 $1-\alpha$ 概率内
+      能观测到的最大错误率。考虑双边假设，若平均错误率 $\mu$ 与 $\epsilon_0$ 之差位于临界值范围 $[t_{-\frac{\alpha}{2}},t_{\frac{\alpha}{2}}]$ 内，则不能拒绝假设 "$\mu=\epsilon_0$",
+      即 *可认为泛化错误率为 $\epsilon_0$, 置信度为 $1-\alpha$; 否则可拒绝该假设* 。
+
+   4. 交叉 t 验证
+      
+      之前的检验都是对单个学习器的检验，如果我们有两个学习器 A 和 B，如果我们利用 k 折交叉验证法得到的测试错误率分别为
+      $\epsilon^A_1,\epsilon^A_2,\ldots,\epsilon^A_k$ 和 $\epsilon^B_1,\epsilon^B_2,\ldots,\epsilon^B_k$ ，其中，$\epsilon^A_i$ 和 $\epsilon^B_i$ 是在相同的第 i 折训练/测试集上得到的
+      结果，则可用 “成对 t 检验” (paired t-tests) 来进行比较检验。
+
+      #+BEGIN_VERSE
+      *基本思想：* 如果两个学习器的性能相同，则它们使用相同的训练/测试集得到测试错误率应该相同，即 $\epsilon^A_i=\epsilon^B_i$. 
+      #+END_VERSE
+
+      具体而言，对 k 折交叉验证产生的 k 对测试错误率，先对每队结果进行求差 $\Delta_i=\epsilon^A_i-\epsilon^B_i$, 如果
+      两个学习器性能相同，则差值均值应该为 0. 因此，可对 “学习器 A 和学习器 B 性能相同” 这个假设做 t 检验，计算差值的均值
+      $\mu$ 和方差 $\sigma^2$, 在显著度 $\alpha$ 下，若变量
+      
+        \begin{equation}
+          \tau_t = |\frac{\sqrt{k}\mu}{\sigma}|
+        \end{equation}
+
+      小于临界值 $t_{\frac{\alpha}{2},k-1}$, 则假设不能被拒绝。这里的 $t_{\frac{\alpha}{2},k-1}$ 是自由度为 k-1 的
+      t 分布上尾部累积分布为 $\alpha/2$ 的临界值。
+
+   5. $5\times2$ 交叉验证
+
+      有效的假设检验一个重要前提是测试错误率为泛化错误率的独立采样，然后，通常情况下，由于样本有限，使用交叉验证等实验估计方法时，
+      不同轮次的训练集会有一定程度的重叠，为缓解这一情况，可采用 “5x2 交叉验证法”。
+
+      *5x2 交叉验证法：* 在每次 2 折交叉验证之前随机将数据打乱，使得 5 次交叉验证中的数据划分不重复，对两个学习器 A 和 B，第 i
+      次 2 折交叉验证将产生两对错误率，我们分别对它们求差，得到第 1 折上的差值 $\Delta^1_i$ 和第 2 折上的差值 $\Delta^2_i$.
+      为缓解测试错误率带来的非独立性，仅计算第 1 次 2 折交叉验证的两个结果平均值 $\mu=0.5(\Delta^1_1+\Delta^2_1)$, 但对每次
+      2 折交叉实验结果均计算出其方差 $\sigma_i^2=(\Delta^1_i-\frac{\Delta^1_i+\Delta^2_i}{2})^2+
+      (\Delta^2_i-\frac{\Delta^1_i+\Delta^2_i}{2})^2$. 变量
+      
+        \begin{equation}
+          \tau_t = \frac{\mu}{\sqrt{0.2\sum\limits^5_{i=1}\sigma^2}}
+        \end{equation}
+        
+      服从自由度为 5 的 t 分布，其双边检验的临界值 $t_{\alpha/2,5}$ 当 $\alpha=0.05$ 时，为 2.5706， $\alpha=0.1$ 时，为
+      2.0150.
+
+   6. McNemar 检验
+
+   7. Friedman 检验与 Nemenyi 后续检验
+
+* 偏差与方差
+
+  #+BEGIN_VERSE
+  对学习算法除了通过实验估计其泛化性能，人们往往还希望了解它为何具有这样的性能， “偏差-方差分解” (bias-variance decomposition) 是
+  解释学习算法泛化性能的一种重要工具。
+  #+END_VERSE
+
+  1. 假设训练集均来自于同一分布，对测试样本 $\bm{x}$, 令 $y_D$ 为 $\bm{x}$ 在数据集中的标记， $y$ 为 $\bm{x}$ 的真实标记， $f(\bm{x},D)$
+     为训练集 $D$ 上学得模型 $f$ 在 $\bm{x}$ 上的预测输出，
+  2. 以回归任务为例，学习算法的期望预测为：
+
+       \begin{equation}
+         \bar{f}(\bm{x}) = \mathbb{E}_{D}[f(\bm{x},D)],
+       \end{equation}
+
+  3. 使用样本数相同的不同训练集产生的方差为：
+
+       \begin{equation}
+         var(\bm{x}) = \mathbb{E}_D[(f(\bm{x};D)-\bar{f}(\bm{x}))^2]
+       \end{equation}
+
+  4. 噪声为：
+
+       \begin{equation}
+         \epsilon^2 = \mathbb{E}_D[(y_D-y)^2]
+       \end{equation}
+
+  5. 预期输出与真实标记的差别称为偏差(bias),即
+
+       \begin{equation}
+         bias^2(\bm{x}) = (\bar{f}(\bm{x})-y)^2
+       \end{equation}
+
+  6. 对算法的期望泛化误差进行分解：
+
+       \begin{equation}
+         \begin{array}[bct]{lcl}
+           E(f;D) &=& \mathbb{E}_{D}\left[(f(\bm{x},D)-y_D)^2\right]\\
+                  &=&\mathbb{E}_{D}\left[ (f(\bm{x},D)-\bar{f}(\bm{x}) + \bar{f}(\bm{x}) - y_D)\right]\\
+                  &=&\mathbb{E}_{D}\left[(f(\bm{x},D)-\bar{f}(\bm{x}))^2\right] +
+                      \mathbb{E}_{D}\left[(\bar{f}(\bm{x})-y_D)^2\right]\\
+                  &&+\mathbb{E}_{D}\left[ 2(f(\bm{x};D)-\bar{f}(\bm{x}))(\bar{f}(\bm{x})-y_D) \right]\\
+           &=&\mathbb{E}_{D}\left[(f(\bm{x},D)-\bar{f}(\bm{x}))^2\right] +
+               \mathbb{E}_{D}\left[(\bar{f}(\bm{x})-y_D)^2\right]\\
+           &=&\mathbb{E}_{D}\left[(f(\bm{x},D)-\bar{f}(\bm{x}))^2\right] +
+                      \mathbb{E}_{D}\left[(\bar{f}(\bm{x})-y+y-y_D)^2\right]\\
+           &=&\mathbb{E}_{D}\left[(f(\bm{x},D)-\bar{f}(\bm{x}))^2\right]+
+               \mathbb{E}_{D}\left[(\bar{f}(\bm{x})-y)^2\right]+\mathbb{E}_{D}\left[(y-y_D)^2\right]
+                  &&+2\mathbb{E}_{D}\left[ (\bar{f}(\bm{x})-y)(y-y_D) \right]\\
+                  &=&(\bar{f}(\bm{x})-y)^2+\mathbb{E}_{D}\left[(f(\bm{x},D)-\bar{f}(\bm{x}))^2\right]
+                      +\mathbb{E}_{D}\left[ (y_D-y)^2 \right]
+         \end{array}
+       \end{equation}
+
+     其中， $\mathbb{E}_{D}(f(\bm{x};D)-\bar{f}(\bm{x})=0$, 且我们假设噪声期望为 0，即 $\mathbb{E}_{D}(y-y_D)=0$
+
+     于是，我们得到泛化误差的分解式：
+     
+       \begin{equation}
+         E(f;D) = bias^2(\bm{x})+var(\bm{x})+\epsilon^2
+       \end{equation}
+
+     即， *泛化误差可以分解为偏差、方差与噪声之和* 。
+
+     #+BEGIN_VERSE
+     偏差度量了学习算法的期望预测与真实结果的偏离程度，刻画了学习算法本身的拟合能力；方差度量了同样大小的训练集的变动所导致的学习性能的
+     变化，即刻画了数据扰动所造成的影响；噪声则表达了当前任务上任何学习算法所能达到的期望泛化误差的下界，即刻画了学习问题本身的难度。
+     #+END_VERSE
+
+     [[file:MachineLearning/ml_basic/error_bias_var.png]]
+       
+* Footnotes
+
+[fn:1] 这个想法挺好，但是对下面的 t 分布而言，不是这样的，下面的 t 分布，可以理解为对某个测量真值进行多次独立测量，得到的测量值按照大数定律，
+应该是趋于高斯分布的，而对于有限测试而言，则应该是服从 t 分布，之所以要做下面的变形，是为了对应标准正态分布。

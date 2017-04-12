@@ -1,0 +1,1500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<App>
+  <WorkSpace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="热门品种" Mode="Main" CreatedDateTime="2017-04-12" Width="1522" Height="703" nWorkSpaceLastestIndex="0">
+    <ScreenPanel OrignalChartFunction="M" ChartFunction="M" nChartIndex="0" isMax="false" ScreenBackColorHtml="Black" ActiveControlColorHtml="Blue" SplitColorHtml="White">
+      <MProperty AutoRefresh="true" bGoodsSingleModify="true" bAutoTradingSingleModify="true" WorkSpaceName="热门品种" LastestIndex="23">
+        <AllGoods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="0">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="192" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="rb000" ItemName="螺纹钢指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="1">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="cu000" ItemName="沪铜指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="2">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="a9000" ItemName="豆一指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="3">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="ag000" ItemName="白银指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="4">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="al000" ItemName="沪铝指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="5">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="au000" ItemName="黄金指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="6">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="bu000" ItemName="沥青指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="7">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="c9000" ItemName="玉米指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="8">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="CF000" ItemName="棉花指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="9">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="fu000" ItemName="燃油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="10">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="hc000" ItemName="热轧卷板指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="11">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="i9000" ItemName="铁矿石指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="12">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="IF000" ItemName="股指指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="13">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="j9000" ItemName="焦炭指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="14">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="jm000" ItemName="焦煤指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="15">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="l9000" ItemName="塑料指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="16">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="MA000" ItemName="甲醇指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="17">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="p9000" ItemName="棕榈油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="18">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="RO000" ItemName="菜籽油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="19">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="ru000" ItemName="橡胶指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="20">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="SR000" ItemName="白糖指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="21">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="TA000" ItemName="PTA指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="22">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="y9000" ItemName="豆油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+          <Goods IsTradeLock="false" AutoRefresh="true" WorkSpaceName="热门品种" Index="23">
+            <PageSetting CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true" NormalFlag="PriceGridLine TimeGridLine GoodsBaseLine ChildSplitLine BuyPriceLine SellPortPriceLine MsgToolTip TransferMsgToolTip HorScrollBar MaxMinPrice BarDataOnMsgToolTip" LeftXAxis="None" RightXAxis="Price" PageDataExtractRange="Screen" DataExtractMax="5800" DataExtractMin="4800" ShowNumber="300" XAxisHeight="20" XAxisWidth="60" RightSpaceWidth="0" TitleMark="GoodsCode GoodsName Term Date Close DownUpNumber DownUpPercent Open High Low" TitleFontName="Tahoma" TitleFontSize="16" TitleFontMode="Regular" ColorTitleGoodsCodeHtml="#FFFFFF" ColorTitleGoodsNameHtml="#FFFFFF" ColorTitleTermHtml="#00FFFF" ColorTitleDateHtml="#FFFF00" ColorTitleCloseHtml="#FF0000" ColorTitleDownUpNumberHtml="#FF0000" ColorTitleDownUpPercentHtml="#FF0000" ColorTitleOpenHtml="#FFFFFF" ColorTitleHighHtml="#FFFFFF" ColorTitleLowHtml="#FFFFFF" BgColorHtml="#000000" ShowMaxNum="50000" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00">
+              <NormalLines>
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#00FF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="false" LineColorHtml="#FFFF00" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="true" LineColorHtml="#FF0000" LineWidth="1" LineStyle="LineType_Solid" />
+                <Lines Show="true" LineColorHtml="#1E283C" LineWidth="1" LineStyle="LineType_Dashed" />
+                <Lines Show="false" LineColorHtml="#808080" LineWidth="1" LineStyle="LineType_Dashed" />
+              </NormalLines>
+              <PriceFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+              <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
+              <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
+            </PageSetting>
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+              <IniMargin>10000000</IniMargin>
+            </TradeSetting>
+            <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+              <TacticsAccounts />
+              <MappingGoods />
+              <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+                <nBidAskTicks>0</nBidAskTicks>
+              </AlgoSetting>
+            </TacticsTradeSetting>
+            <MasterGoods ItemID="-1" ItemCode="ZC000" ItemName="动力煤指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+            </MasterGoods>
+            <OptimizeSetting>
+              <Optimizesettings />
+              <TacticParameters />
+            </OptimizeSetting>
+            <SubGoods />
+            <Tacticses>
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+                <Parameters>
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                </Parameters>
+                <Lines />
+                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Symbles>
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                </Symbles>
+                <OptimizeParamters />
+              </Tactics>
+            </Tacticses>
+            <GraphToolSaveInfos />
+            <DataSources />
+          </Goods>
+        </AllGoods>
+        <CurvePageSetting EnableUpDownColor="true" RGBBackground="-16777216" RGBCurve="-1" RGBBarGraph="-65281" XAxisHeight="20" YAxisWidth="70" isTimeSplit1Selected="false" isTimeSplit2Selected="false" isTimeSplit3Selected="false" TimeSplit1="1970-01-01T00:00:00" TimeSplit2="1970-01-01T00:00:00" TimeSplit3="1970-01-01T00:00:00" ShowMaxNum="50000">
+          <FontTitle FontName="Tahoma" FontMode="Regular" FontColorHtml="Black" FontSize="16" />
+          <FontBJB FontName="Tahoma" FontMode="Regular" FontColorHtml="Black" FontSize="16" />
+          <FontYAxis FontName="Tahoma" FontMode="Regular" FontColorHtml="Black" FontSize="16" />
+        </CurvePageSetting>
+        <DataSources />
+        <WeightManager>
+          <FChartGoodsWeights />
+        </WeightManager>
+        <BaseGoodsSetting ItemID="-1" ItemCode="IF888" ItemName="股指连续" Term="Minitus" NValue="1" RangeType="Sample" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2012-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="false">
+          <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+        </BaseGoodsSetting>
+        <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+          <IniMargin>10000000</IniMargin>
+        </TradeSetting>
+        <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
+          <TacticsAccounts />
+          <MappingGoods />
+          <AlgoSetting TemplateName="tempTemplate" RunMinNum="0" bSingleOrHandicap="true" SingleNum="0" SingleRange="0" HandicapPercent="0" OffsetHops="0" bOrderDependency="false" MinOrderHandicaps="0" bTimeDependency="true" OrderSpan="0" OrderSpanRange="0" TotalTime="0" eTotalTimeLimit="CurrentDay" bTakeActionsWhenHarmful="false" MinHarmfulHops="0" bStopOrAccelerateWhenHarmful="true" bTakeActionsWhenBenefit="false" MinBenefitHops="0" bStopOrAccelerateWhenBenefit="true" bCanAlgoTrade="false" bAutoKP="false">
+            <nBidAskTicks>0</nBidAskTicks>
+          </AlgoSetting>
+        </TacticsTradeSetting>
+        <OptimizeSetting>
+          <Optimizesettings />
+          <TacticParameters />
+        </OptimizeSetting>
+        <Tacticses>
+          <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+            <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+            <Parameters>
+              <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
+              <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
+              <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
+              <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
+              <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+              <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+            </Parameters>
+            <Lines />
+            <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+            <Symbles>
+              <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+              <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+              <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+              <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+            </Symbles>
+            <OptimizeParamters />
+          </Tactics>
+        </Tacticses>
+        <PageSetting rgbBgColor="-16777216" ShowArea="POINT_IN_GOODS POINT_IN_TACTICS" CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true">
+          <Columns>
+            <Column Enabled="true" ColumnType="Node_Code" />
+            <Column Enabled="true" ColumnType="Node_Name" />
+            <Column Enabled="true" ColumnType="Node_Term" />
+            <Column Enabled="false" ColumnType="Node_StartTime" />
+            <Column Enabled="false" ColumnType="Node_LastTime" />
+            <Column Enabled="true" ColumnType="Node_Close_Yestaday" />
+            <Column Enabled="false" ColumnType="Node_Open" />
+            <Column Enabled="true" ColumnType="Node_Close" />
+            <Column Enabled="false" ColumnType="Node_High" />
+            <Column Enabled="false" ColumnType="Node_Low" />
+            <Column Enabled="false" ColumnType="Node_LowChange" />
+            <Column Enabled="true" ColumnType="Node_MarketPosition" />
+            <Column Enabled="true" ColumnType="Node_ChangePercent" />
+            <Column Enabled="true" ColumnType="Node_Change" />
+            <Column Enabled="false" ColumnType="Node_TacticArgs" />
+            <Column Enabled="false" ColumnType="Node_LongPosition" />
+            <Column Enabled="false" ColumnType="Node_ShortPosition" />
+            <Column Enabled="false" ColumnType="Node_PreClosePrice" />
+            <Column Enabled="false" ColumnType="Node_ChangePercent_C" />
+            <Column Enabled="false" ColumnType="Node_Change_C" />
+          </Columns>
+          <FontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="Black" FontSize="16" />
+        </PageSetting>
+      </MProperty>
+    </ScreenPanel>
+  </WorkSpace>
+</App>
