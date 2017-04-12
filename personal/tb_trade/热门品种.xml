@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <App>
-  <WorkSpace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="热门品种" Mode="Main" CreatedDateTime="2017-04-12" Width="1522" Height="703" nWorkSpaceLastestIndex="0">
+  <WorkSpace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="热门品种" Mode="Main" CreatedDateTime="2017-04-12" Width="1266" Height="558" nWorkSpaceLastestIndex="0">
     <ScreenPanel OrignalChartFunction="M" ChartFunction="M" nChartIndex="0" isMax="false" ScreenBackColorHtml="Black" ActiveControlColorHtml="Blue" SplitColorHtml="White">
       <MProperty AutoRefresh="true" bGoodsSingleModify="true" bAutoTradingSingleModify="true" WorkSpaceName="热门品种" LastestIndex="23">
         <AllGoods>
@@ -31,7 +31,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="rb000" ItemName="螺纹钢指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -39,23 +39,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -90,7 +90,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="cu000" ItemName="沪铜指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -98,23 +98,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -149,7 +149,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="a9000" ItemName="豆一指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -157,23 +157,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -208,7 +208,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="ag000" ItemName="白银指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -216,23 +216,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -267,7 +267,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="al000" ItemName="沪铝指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -275,23 +275,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -326,7 +326,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="au000" ItemName="黄金指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -334,23 +334,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -385,7 +385,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="bu000" ItemName="沥青指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -393,23 +393,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -444,7 +444,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="c9000" ItemName="玉米指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -452,23 +452,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -503,7 +503,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="CF000" ItemName="棉花指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -511,23 +511,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -562,7 +562,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="fu000" ItemName="燃油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -570,23 +570,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -621,7 +621,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="hc000" ItemName="热轧卷板指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -629,23 +629,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -680,7 +680,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="i9000" ItemName="铁矿石指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -688,23 +688,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -739,7 +739,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="IF000" ItemName="股指指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -747,23 +747,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -798,7 +798,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="j9000" ItemName="焦炭指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -806,23 +806,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -857,7 +857,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="jm000" ItemName="焦煤指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -865,23 +865,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -916,7 +916,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="l9000" ItemName="塑料指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -924,23 +924,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -975,7 +975,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="MA000" ItemName="甲醇指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -983,23 +983,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1034,7 +1034,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="p9000" ItemName="棕榈油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1042,23 +1042,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1093,7 +1093,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="RO000" ItemName="菜籽油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1101,23 +1101,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1152,7 +1152,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="ru000" ItemName="橡胶指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1160,23 +1160,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1211,7 +1211,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="SR000" ItemName="白糖指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1219,23 +1219,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1270,7 +1270,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="TA000" ItemName="PTA指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1278,23 +1278,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1329,7 +1329,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="y9000" ItemName="豆油指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1337,23 +1337,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1388,7 +1388,7 @@
               </AlgoSetting>
             </TacticsTradeSetting>
             <MasterGoods ItemID="-1" ItemCode="ZC000" ItemName="动力煤指数" Term="Hour" NValue="1" RangeType="Range" KLineType="Candel" KLineNagativeColorHtml="#FF0000" KLinePositiveColorHtml="#00FF00" KLineShadowColorHtml="#F8F8FF" Is3DStyle="false" SampleStartDate="2011-01-04" SampleEndDate="2017-04-10" SampleRangeUnit="Day" SampleUnitValue="1" SampleValue="300" EnableSampleEndDate="true">
-              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="AccountByNum" SlipPointValue="1" />
+              <ItemTradeSetting SecurityPercent="10" CurrentPercent="0" EnableMarketPrice="true" OrderPriceType="ORDER_PRICE_OPP" MarketStep="10" ServiceChargeMode="PercentOfTotalAccount" ServiceChargeValue="1" CloseServiceCharge="false" CloseTodayServiceCharge="false" SlipPointMode="PointByNum" SlipPointValue="1" />
             </MasterGoods>
             <OptimizeSetting>
               <Optimizesettings />
@@ -1396,23 +1396,23 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
+              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+                <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-                  <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyUpBand" DataType="Numeric" Value="75" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="PsyDnBand" DataType="Numeric" Value="25" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="InitialStop" DataType="Numeric" Value="20" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="BreakEvenStop" DataType="Numeric" Value="30" />
+                  <Parameter TacticsID="149" UserTacticsID="289" Code="TrailingStop" DataType="Numeric" Value="50" />
                 </Parameters>
                 <Lines />
-                <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
+                <Deal TacticsID="149" UserTacticsID="289" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
                 <Symbles>
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-                  <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
+                  <Symble TacticsID="149" UserTacticsID="289" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
                 </Symbles>
                 <OptimizeParamters />
               </Tactics>
@@ -1447,28 +1447,7 @@
           <Optimizesettings />
           <TacticParameters />
         </OptimizeSetting>
-        <Tacticses>
-          <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
-            <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-11T23:56:13.8259358+08:00" />
-            <Parameters>
-              <Parameter TacticsID="179" UserTacticsID="319" Code="Length" DataType="Numeric" Value="12" />
-              <Parameter TacticsID="179" UserTacticsID="319" Code="PsyUpBand" DataType="Numeric" Value="75" />
-              <Parameter TacticsID="179" UserTacticsID="319" Code="PsyDnBand" DataType="Numeric" Value="25" />
-              <Parameter TacticsID="179" UserTacticsID="319" Code="InitialStop" DataType="Numeric" Value="20" />
-              <Parameter TacticsID="179" UserTacticsID="319" Code="BreakEvenStop" DataType="Numeric" Value="30" />
-              <Parameter TacticsID="179" UserTacticsID="319" Code="TrailingStop" DataType="Numeric" Value="50" />
-            </Parameters>
-            <Lines />
-            <Deal TacticsID="179" UserTacticsID="319" ShowTradeLine="true" TradeLineStyle="LineType_Dashed" TradeLineWidth="1" LoseColorHtml="#00FF00" WinColorHtml="#FF0000" />
-            <Symbles>
-              <Symble TacticsID="179" UserTacticsID="319" SymbleID="Buy" SymbleStyleID="1" SymbleStyleColorHtml="#FFFF00" PriceStyleID="1" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-              <Symble TacticsID="179" UserTacticsID="319" SymbleID="Sell" SymbleStyleID="2" SymbleStyleColorHtml="#FFFF00" PriceStyleID="2" PriceStyleColorHtml="#FFFF00" Flag="ShowTradeNum" />
-              <Symble TacticsID="179" UserTacticsID="319" SymbleID="SellShort" SymbleStyleID="3" SymbleStyleColorHtml="#FF00FF" PriceStyleID="3" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-              <Symble TacticsID="179" UserTacticsID="319" SymbleID="BuyToCover" SymbleStyleID="4" SymbleStyleColorHtml="#FF00FF" PriceStyleID="4" PriceStyleColorHtml="#FF00FF" Flag="ShowTradeNum" />
-            </Symbles>
-            <OptimizeParamters />
-          </Tactics>
-        </Tacticses>
+        <Tacticses />
         <PageSetting rgbBgColor="-16777216" ShowArea="POINT_IN_GOODS POINT_IN_TACTICS" CapitalType="NetFrofit" AssistantDataType="InvalidAssistantDataType" EnableWeight="true">
           <Columns>
             <Column Enabled="true" ColumnType="Node_Code" />

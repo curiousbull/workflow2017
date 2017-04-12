@@ -1,0 +1,2 @@
+#+TITLE: KDJ顶背离策略的思路
+#+AUTHOR: 胡琛
