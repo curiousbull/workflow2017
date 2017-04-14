@@ -47,8 +47,76 @@
     :END:
 ** Projects
 
-*** TODO Scikit-learn 学习计划 [/]
+*** TODO Scikit-learn 学习计划 [0%]
     SCHEDULED: <2017-04-11 周二 19:00.+1d>
+    
+    - [ ] Supervised Learning
+      - [ ] Generalized Linear Models
+      - [ ] Linear and Quadratic Discriminant Analysis
+      - [ ] Kernel Ridge Regression
+      - [ ] Support Vector Machines
+      - [ ] Stochastic Gradient Descent
+      - [ ] Nearest Neighbors
+      - [ ] Gaussian Processes
+      - [ ] Cross Decomposition
+      - [ ] Naive Bayes
+      - [ ] Decision Tress
+      - [ ] Ensemble Methods
+      - [ ] Multi-class And Multi-label Algorithm
+      - [ ] Feature Selection
+      - [ ] Semi-Supervised
+      - [ ] Isotonic Regression
+      - [ ] Probability Calibration
+      - [ ] Neural Network Models (supervised)
+    - [ ] Unsupervised Learning
+      - [ ] Gaussian Mixture Models
+      - [ ] Manifold Learning
+      - [ ] Clustering
+      - [ ] Bi-clustering
+      - [ ] Decomposing Signals in Components (matrix factorization problems)
+      - [ ] Covariance Estimation
+      - [ ] Novelty and Outlier Detection
+      - [ ] Density Estimation
+      - [ ] Neural Network Models (unsupervised)
+    - [ ] Model Selection And Evaluation
+      - [ ] Cross-validation: Evaluating Estimator Performance
+      - [ ] Tuning The Hyper-parameters of An Estimator
+      - [ ] Model Evaluation: Quantifying the Quality of Predictions
+      - [ ] Model Persistence
+      - [ ] Validation Curves: Plotting Scores to Evaluate Models
+    - [ ] Dataset Transformations
+      - [ ] Pipeline and Feature Union: Combining Estimators
+      - [ ] Feature Extraction
+      - [ ] Preprocessing Data
+      - [ ] Random Projection
+      - [ ] Kernel Approximation
+      - [ ] Pairwise Metrics, Affinities and Kernels
+      - [ ] Transforming The Predictor Target (y)
+    - [ ] Dataset Loading Utilities
+      - [ ] General Dataset API
+      - [ ] Toy Dataset
+      - [ ] Sample Images
+      - [ ] Sample Generators
+      - [ ] Datasets in =svmlight= / =libsvm=  Format
+      - [ ] Loading From External Datasets
+      - [ ] The Olivetti Faces Dataset
+      - [ ] The 20 Newsgroups Text Dataset
+      - [ ] Downloading Datasets From the =mldata.org= repository
+      - [ ] The Labeled Faces in The Wild Face Recognition Dataset
+      - [ ] Forest Cover Types
+      - [ ] =RCV1= Dataset
+      - [ ] Boston House Prices Dataset
+      - [ ] Breast Cancer Wisconsin (Dignostic) Dataset
+      - [ ] Diabetes Dataset
+      - [ ] Optical Recognition of Handwritten Digits Data Set
+      - [ ] Iris Plants Database
+      - [ ] Linnerrud Dataset
+    - [ ] Strategies to scale computationally: bigger data
+      - [ ] Scaling with Instances Using Out-of-core Learning
+    - [ ] Computational Performance
+      - [ ] Prediction Latency
+      - [ ] Prediction Throughput
+      - [ ] Tips And Tricks
 
 *** NEXT vnpy 学习计划
     :LOGBOOK:
