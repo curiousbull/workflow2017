@@ -1,0 +1,221 @@
+
+* 策略运行流程
+
+** 几个回测要素
+
+   + 数据源路径
+
+   + 策略文件路径
+
+   + 回测起始时间
+
+   + 回测结束时间
+
+   + 起始资金
+
+   + Benchmark
+
+** 回测命令
+
+   #+BEGIN_SRC bash
+     rqalpha run -f ./rqalpha/examples/buy_and_hold.py -d ./rqalpha/bundle/\
+     -s 2016-0601 -e 2016-12-01 --stock-starting-cash 100000 --benchmark 000300.XSHG
+   #+END_SRC
+   
+   假如想要以图形结果查看回测结果，则增加 =--plot= 参数
+
+   #+BEGIN_SRC bash
+     rqalpha run -f ./rqalpha/examples/buy_and_hold.py -d ./rqalpha/bundle/\
+             -s 2016-0601 -e 2016-12-01 --stock-starting-cash 100000 --benchmark 000300.XSHG --plot
+   #+END_SRC
+
+   如果想要将回测结果保存，可以通过 =-o= 参数将结果保存为 =pkl= 文件
+
+   #+BEGIN_SRC bash
+     rqalpha run -f ./rqalpha/examples/buy_and_hold.py -d ./rqalpha/bundle/\
+             -s 2016-0601 -e 2016-12-01 --stock-starting-cash 100000 \
+             --benchmark 000300.XSHG --plot -o result.pkl
+   #+END_SRC
+   
+
+* 策略编写流程
+
+  =RQAlpha= 的 =API= 主要分为三类：约定函数、数据查询和交易接口
+
+** 约定函数
+
+   作为 =API= 的入口函数，用户必须实现对应的约定函数才可以正确使用 =RQAlpha=
+
+   - =init()= ：初始化方法，会在程序启动时执行
+   
+   - =handle_bar()= ：bar 数据更新的时候会自动触发调用
+
+   - =before_trading()= ：会在每天策略交易开始前调用
+
+   - =after_trading()= ：会在每天交易结束后调用
+
+   - 示例：
+
+     #+BEGIN_SRC python
+       # 在这个方法中编写任意初始化逻辑，context 对象将会在算法策略的任何方法之间做传递
+       def init(context):
+           # 在 context 中保存全局变量
+           context.s1 = "000001.XSHG"
+           # 实时打印日志
+           logger.info("RunInfo: {}".format(context.run_info))
+
+       # before_trading 此函数会在每天策略交易开始前被调用，当天只会被调用一次
+       def before_trading(context, bar_dict):
+           logger.info("开盘前执行 before_trading 函数")
+
+       # 选择的证券的数据更新将会触发此段逻辑，例如日或分钟历史数据切片或者是实时数据切片更新
+       def handle_bar():
+           logger.info("每一个Bar执行")
+           logger.info("打印Bar数据")
+           logger.info(bar_dict[context.s1])
+
+       # after_trading 函数会在每天交易结束后被调用，当天只会被调用一次
+       def after_trading(context):
+           logger.info("收盘后执行after_trading函数")
+     #+END_SRC
+
+** 数据查询
+
+   - =all_instrucments()= ：获取所有合约基础信息数据
+
+   - =instruments()= ：获取合约详细数据
+
+   - =history_bars()= ：获取某一合约的历史数据
+
+   - =current_snapshot()= ：获取当前快照
+
+   - =get_future_contracts()= ：获取期货可以交易合约列表
+
+   - =get_trading_dates()= ：获取交易日列表
+
+   - =get_previous_trading_date()= ：获取上一交易日
+
+   - =get_next_trading_date()= ：获取下一交易日
+
+   - =get_yield_curve()= ：获取收益率曲线
+
+   - =is_suspended()= ：判断某股票当天是否停牌
+
+   - =is_at_stock()= ：判断某股票是否为 *st
+
+   - 金融、财务、合约历史数据等数据接口可以查询 [[http://rqalpha.readthedocs.io/zh_CN/latest/api/extend_api.html#api-extend-api][扩展API]]
+
+   - 其他
+
+     1. /bar_dict/ ：在 =handle_bar()= 中可以用 /bar_dict/ 来获取相应的 *Bar* 数据， /bar_dict/ 是一个字典
+        类型变量，直接通过传 /key/ 的方式就可以获取到对应的 *Bar* 数据。
+
+     2. 我们可以引用第三方库在帮助我们生成相应的指标序列，譬如，使用 **TA-Lib** 来获取移动平均线序列。
+
+   - 示例
+
+     #+BEGIN_SRC python
+       import talib
+
+       # 在这个方法中编写任意初始化逻辑，context对象将会在算法策略中任何方法间做传递
+       def init(context):
+           # 在context中保存全局变量
+           context.s1 = "000001.XSHE"
+           # 打印实时日志
+           logger.info("RunInfo: {}".format(context.run_info))
+
+           # 设置这个策略中会用到的参数，在策略中可以随时调用，这个策略使用长短均线，我们这里
+           # 设定长线和短线的区间，再调试寻找最佳区间的时候只需要在这里进行变动
+           context.SHORTPERIOD = 20
+           context.LONGPERIOD = 120
+
+       # before_trading 此函数将会在每天策略交易开始前被调用，譬如日或者分钟历史数据切片或者
+       # 是实时数据切片更新
+       def before_trading(context):
+           logger.info("每一个Bar执行")
+           logger.info("打印Bar数据")
+           logger.info(bar_dict[context.s1])
+
+           # 因为策略需要用到均线，所以需要读取历史数据
+           prices = history_bars(context.s1, context.LONGPERIOD+1, '1d', 'close')
+
+           # 使用talib计算长短均线，均线以array格式表达
+           short_avg = talib.SMA(prices, context.SHORTPERIOD)
+           long_avg = talib.SMA(prices, context.LONGPERIOD)
+
+           plot("short avg", short_avg[-1])
+           plot("long avg", long_avg[-1])
+
+           # 计算现在portfolio中股票的仓位
+           cur_position = context.portfolio.positions[context.s1].quantity
+           # 计算现在在portfolio中的现金可以购买多少股票
+           shares = context.portfolio.cash/bar_dict[context.s1].close
+
+           # 如果短均线从上往下突破长均线
+           if short_avg[-1] - long_avg[-1] < 0 and short_avg[-2] - long_avg[-2] > 0 and cur_position > 0:
+               # 进行清仓
+               order_target_value(context.s1, 0)
+
+           # 如果短均线从下往上突破长均线
+           if short_avg[-1] - long_avg[-1] > 0 and short_avg[-2] - long_avg[-2] < 0:
+               # 满仓入股
+               order_shares(context.s1, shares)
+
+       # after_trading 函数会在每天交易结束后被调用，当天只会被调用一次
+       def after_trading(context):
+           pass
+     #+END_SRC
+
+** 交易接口
+   - =order_shares()= ：(股票专用) 指定股数交易
+   - =order_lots()= ：(股票专用) 指定手数交易
+   - =order_value()= ：(股票专用) 指定价值交易
+   - =order_percent()= ：(股票专用) 一定比例下单
+   - =order_target_value()= ：(股票专用) 按照目标价值下单
+   - =order_target_percent()= ：(股票专用) 按照目标比例下单
+   - =buy_open()= ：(期货专用) 买开
+   - =sell_close()= ：(期货专用) 平买仓
+   - =sell_open()= ：(期货专用) 卖开
+   - =buy_close()= ：(期货专用) 平卖仓
+   - =cancel_order()= ： 撤单
+   - =get_open_orders()= ：获取未成交订单数据
+
+
+* 一个完整的 =Golder Cross= 算法示例
+   
+  #+BEGIN_SRC ipython
+    import talib
+
+    def init(context):
+        context.s1 = "000001.XSHE"
+        context.SHORTPERIOD = 20
+        context.LONGPERIOD = 120
+
+    def before_trading(context):
+        pass
+
+    def handle_bar(context. bar_dict):
+        prices = history_bars(context.s1, context.LONGPERIOD+1, '1d', 'close')
+        short_avg = talib.SMA(prices, context.SHORTPERIOD)
+        long_avg = talib.SMA(prices, context.LONGPERIOD)
+
+        plot("short avg", short_avg[-1])
+        plot("long avg", long_avg[-1])
+
+        cur_position = context.portfolio.positions[context.s1].quantity
+        shares = context.portfolio.cash/bar_dict[context.s1].close
+
+        if short_avg[-1] - long_avg[-1] < 0 and short_avg[-2] - long_avg[-2] > 0 and cur_position > 0:
+            order_target_value(context.s1, 0)
+
+        if short_avg[-1] - long_avg[-1] > 0 and short_avg[-2] - long_avg[-2] < 0:
+            order_shares(context.s1, shares)
+
+    def after_trading(context):
+        pass
+  #+END_SRC
+
+   
+
+   
+
