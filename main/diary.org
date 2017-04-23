@@ -1,0 +1,14 @@
+#+TITLE: 日记
+#+AUTHOR: 胡琛
+
+笃行克己！！！
+笃行克己！！！
+笃行克己！！！
+
+* 准备做的事情
+
+  1. RiceQuant使用
+  2. Python进阶
+  3. Scikit-Learn
+  4. CFA 学习
+  5. 论文
