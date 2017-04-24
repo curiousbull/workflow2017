@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <App>
-  <WorkSpace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="热门品种" Mode="Main" CreatedDateTime="2017-04-12" Width="1266" Height="558" nWorkSpaceLastestIndex="0">
+  <WorkSpace xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="热门品种" Mode="Main" CreatedDateTime="2017-04-24" Width="1906" Height="919" nWorkSpaceLastestIndex="0">
     <ScreenPanel OrignalChartFunction="M" ChartFunction="M" nChartIndex="0" isMax="false" ScreenBackColorHtml="Black" ActiveControlColorHtml="Blue" SplitColorHtml="White">
       <MProperty AutoRefresh="true" bGoodsSingleModify="true" bAutoTradingSingleModify="true" WorkSpaceName="热门品种" LastestIndex="23">
         <AllGoods>
@@ -20,7 +20,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -39,7 +39,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -79,7 +79,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -98,7 +98,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -138,7 +138,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -157,7 +157,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -197,7 +197,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -216,7 +216,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -256,7 +256,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -275,7 +275,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -315,7 +315,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -334,7 +334,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -374,7 +374,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -393,7 +393,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -433,7 +433,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -452,7 +452,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -492,7 +492,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -511,7 +511,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -551,7 +551,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -570,7 +570,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -610,7 +610,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -629,7 +629,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -669,7 +669,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -688,7 +688,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -728,7 +728,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -747,7 +747,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -787,7 +787,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -806,7 +806,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -846,7 +846,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -865,7 +865,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -905,7 +905,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -924,7 +924,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -964,7 +964,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -983,7 +983,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1023,7 +1023,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1042,7 +1042,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1082,7 +1082,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1101,7 +1101,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1141,7 +1141,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1160,7 +1160,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1200,7 +1200,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1219,7 +1219,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1259,7 +1259,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1278,7 +1278,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1318,7 +1318,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1337,7 +1337,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
@@ -1377,7 +1377,7 @@
               <FormulaFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FF0000" FontSize="16" />
               <TimeFontStyle FontName="Tahoma" FontMode="Regular" FontColorHtml="#FFFFFF" FontSize="16" />
             </PageSetting>
-            <TradeSetting VolType="TRADE_VOLUMN_TYPE_VOL" Vol="1" AllowOpenOnEnd="false" MaxOpenOnEndNum="0" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
+            <TradeSetting VolType="TRADE_VOLUMN_TYPE_CAPITAL" Vol="200000" AllowOpenOnEnd="true" MaxOpenOnEndNum="3" MaxPositionNum="200" CalExpandWhenOpti="false" NumForAverDrawdownCal="5" RptByReturnRate="false" RptIncLossOutGain="false">
               <IniMargin>10000000</IniMargin>
             </TradeSetting>
             <TacticsTradeSetting MultiNum="1" EnableEstanblishConvertToCloseYesterday="false" EnableCloseConvertToEstanblish="false" MappingMode="D0ToMain">
@@ -1396,7 +1396,7 @@
             </OptimizeSetting>
             <SubGoods />
             <Tacticses>
-              <Tactics Loaded="true" bShow="true" IsEncry="true" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
+              <Tactics Loaded="true" bShow="true" IsEncry="false" EnableWarn="false" WarnType="0" WarnSettingID="0" WarnTimes="-1" SerVarRefCount="0" eCapitalType="eInvalidType" dWeight="1">
                 <Master Code="psy_trend_v1" Name="" Type="User" State="Trading" ShowMode="Main" ModifiedDateTime="2017-04-12T21:32:56.1161618+08:00" />
                 <Parameters>
                   <Parameter TacticsID="149" UserTacticsID="289" Code="Length" DataType="Numeric" Value="12" />
